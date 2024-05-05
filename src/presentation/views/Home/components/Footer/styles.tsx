@@ -21,6 +21,7 @@ const ContainerText = styled.div`
   align-items: center;
   text-align: left;
   gap: 100px;
+  padding: 0.5rem;
 
   > span {
     display: flex;
