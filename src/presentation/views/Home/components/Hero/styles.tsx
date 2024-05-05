@@ -27,7 +27,8 @@ const ContainerLeft = styled.div`
     font-size: 18px;
     line-height: 33px;
     max-width: 438px;
-    margin-top: -28px;
+    margin-top: 18px;
+    margin-bottom: 20px;
   }
 `;
 

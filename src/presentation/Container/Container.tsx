@@ -14,7 +14,6 @@ export const Container = styled.div<IContainerProps>`
   width: -webkit-fill-available;
   padding-left: 7.5rem;
   padding-right: 7.5rem;
-  background-color: white;
   margin: 0 auto;
   box-sizing: content-box;
   position: relative;
