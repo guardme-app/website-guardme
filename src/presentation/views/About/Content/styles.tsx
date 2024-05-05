@@ -35,6 +35,7 @@ const Title = styled.div`
 const CardContainer = styled.div`
   display: flex;
   margin-top: 48px;
+  justify-content: center;
   flex-direction: row;
   gap: 32px;
   width: 100%;
