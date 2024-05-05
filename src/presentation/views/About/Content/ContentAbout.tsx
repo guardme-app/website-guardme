@@ -18,7 +18,7 @@ export const About: React.FC = () => {
           </p>
         </AboutStyles.Title>
 
-        <Grid container flexDirection="row">
+        <Grid container flexDirection="row" justifyContent="center">
           <AboutStyles.CardContainer>
             {cards.map(({ id, image, name, profession, text }) => {
               return (

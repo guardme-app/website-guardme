@@ -11,7 +11,7 @@ import Image from "next/image";
 export const Footer: React.FC = () => {
   return (
     <FooterStyles.Container>
-      <Container $flexDirection="column">
+      <Container $flexDirection="column" $padding="1rem">
         <Grid container spacing="1rem">
           <Grid
             item
