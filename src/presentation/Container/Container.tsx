@@ -14,12 +14,18 @@ export const Container = styled.div<IContainerProps>`
   width: -webkit-fill-available;
   padding-left: 7.5rem;
   padding-right: 7.5rem;
+  background-color: white;
   margin: 0 auto;
   box-sizing: content-box;
   position: relative;
   padding: ${({ $padding }) => $padding};
   z-index: ${({ $zIndex }) => $zIndex};
   flex-direction: ${({ $flexDirection }) => $flexDirection};
+
+  @media (max-width: 1300px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 
   @media (max-width: 1024px) {
     padding-left: 2rem;
