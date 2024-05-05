@@ -40,6 +40,17 @@ const ContainerRight = styled.div`
   background-size: 80%;
   height: 590px;
 
+  > div {
+    display: flex;
+    width: 100%;
+
+    > img {
+      object-fit: contain;
+      height: fit-content;
+      width: 100%;
+    }
+  }
+
   @media (max-width: 1200px) {
     height: 590px;
     background-size: 62%;

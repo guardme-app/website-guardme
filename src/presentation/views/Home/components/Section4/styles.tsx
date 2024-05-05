@@ -66,7 +66,7 @@ const Light = styled.div`
   background: #7b61ff;
   filter: blur(240px);
   z-index: 1;
-  margin-top: -53%;
+  margin-top: -38%;
 
   @media (max-width: 900px) {
     display: none;

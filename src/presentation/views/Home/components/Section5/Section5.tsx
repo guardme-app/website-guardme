@@ -11,7 +11,7 @@ export const Section5: React.FC = () => {
       <Section5Styles.BoxBg />
       <Container>
         <Grid container>
-          <Grid item lg={5} md={6} xs={12}>
+          <Grid item lg={7} md={7} xs={12}>
             <Section5Styles.ContainerLeft>
               <Section5Styles.TextContainer>
                 Stay in touch with us.
@@ -21,7 +21,7 @@ export const Section5: React.FC = () => {
           </Grid>
         </Grid>
         <Grid container>
-          <Grid item lg={7} md={6} xs={12} zIndex={2}>
+          <Grid item lg={5} md={5} xs={12} zIndex={2}>
             <Section5Styles.ContainerRight>
               <Section5Styles.TextRight>
                 <div>
