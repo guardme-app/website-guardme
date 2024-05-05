@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import Link from "next/link";
 
 const Header = styled.header`
   position: relative;
@@ -11,17 +12,23 @@ const Header = styled.header`
   z-index: 11;
 `;
 
-const Nav = styled.div`
+const Nav = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   white-space: nowrap;
+  text-decoration: none;
 
-  > a {
+  > p {
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
     cursor: pointer;
+    color: #202020;
+
+    :hover {
+      text-decoration: underline;
+    }
   }
 
   :first-child {
@@ -34,28 +41,14 @@ const ContainerNav = styled.div`
   gap: 100px;
   flex-wrap: nowrap;
   width: 100%;
-`;
 
-const Button = styled.button`
-  white-space: nowrap;
-  padding: 10px 35px;
-  background-color: #7b61ff;
-  border-radius: 8px;
-  border: 0;
-  font-size: "Open Sans", sans-serif;
-  font-size: 22px;
-  color: white;
-  width: 100%;
-  cursor: pointer;
-
-  :hover {
-    background-color: #6551c7;
+  @media (max-width: 1300px) {
+    gap: 50px;
   }
 `;
 
 export const HeaderStyles = {
   Header,
   Nav,
-  Button,
   ContainerNav,
 };
