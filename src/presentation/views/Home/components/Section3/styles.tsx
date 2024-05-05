@@ -7,8 +7,6 @@ const Container = styled.div`
   align-items: center;
   text-align: center;
   margin: 168px 0px -10px 0px;
-  z-index: 3;
-  background-color: white;
 `;
 
 const Title = styled.h1`
