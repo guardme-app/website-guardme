@@ -2,21 +2,23 @@
 
 import { Container } from "@/presentation/Container/Container";
 import { Grid } from "@mui/material";
-import { Section3Styles } from "./styles";
+import { Section4Styles } from "./styles";
 import * as React from "react";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
-import { cardItems } from "./utils/cardItems";
+import { cards } from "./utils/cards";
 
-export const Section3: React.FC = () => {
+export const Section4: React.FC = () => {
   return (
-    <Section3Styles.Container>
-      <Container $zIndex={2}>
+    <Section4Styles.Container>
+      <Section4Styles.Light />
+      <Container>
         <Grid container flexDirection="column">
-          <Section3Styles.Title>Offered insurances</Section3Styles.Title>
+          <Section4Styles.Title>Why use GuardMe ?</Section4Styles.Title>
+
           <Grid container flexDirection="row" spacing="6rem">
-            {cardItems.map(({ image, alt, title, text }, index) => {
+            {cards.map(({ id, image, width, alt, title, text }) => {
               return (
                 <Grid
                   item
@@ -24,36 +26,36 @@ export const Section3: React.FC = () => {
                   md={4}
                   xs={12}
                   flexDirection="column"
-                  key={index}
+                  key={id}
                   justifyContent="center"
                 >
-                  <Section3Styles.Card>
+                  <Section4Styles.Card>
                     <Image
                       src={image}
                       alt={alt}
                       quality={100}
-                      width={315}
-                      height={175}
+                      width={width}
+                      height={71}
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        <Section3Styles.TitleCard>
+                        <Section4Styles.TitleCard>
                           {title}
-                        </Section3Styles.TitleCard>
+                        </Section4Styles.TitleCard>
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                        <Section3Styles.Content>
+                        <Section4Styles.Content>
                           <span>{text}</span>
-                        </Section3Styles.Content>
+                        </Section4Styles.Content>
                       </Typography>
                     </CardContent>
-                  </Section3Styles.Card>
+                  </Section4Styles.Card>
                 </Grid>
               );
             })}
           </Grid>
         </Grid>
       </Container>
-    </Section3Styles.Container>
+    </Section4Styles.Container>
   );
 };
