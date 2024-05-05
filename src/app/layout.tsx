@@ -28,7 +28,9 @@ export default function RootLayout({
       /> */}
       <html lang="en">
         {/* <SEO /> */}
-        <body suppressHydrationWarning={true}>{children}</body>
+        <body style={{ overflowX: "hidden" }} suppressHydrationWarning={true}>
+          {children}
+        </body>
         <link rel="icon" href="/favicon.ico" />
       </html>
     </>
