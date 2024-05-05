@@ -54,7 +54,7 @@ const ContainerNav = styled.div`
   }
 `;
 
-const MenuIcon = styled(Grid)<{ isopen: boolean | undefined }>`
+const MenuIcon = styled(Grid)<{ isOpen: boolean | undefined }>`
   svg {
     width: 32px;
     min-width: 32px;
@@ -64,25 +64,30 @@ const MenuIcon = styled(Grid)<{ isopen: boolean | undefined }>`
   }
 
   #menu-hamburguer {
-    visibility: ${({ isopen }) => (!isopen ? "visibility" : "hidden")};
-    display: ${({ isopen }) => (isopen ? "none" : "flex")};
+    visibility: ${({ isOpen }) => (!isOpen ? "visible" : "hidden")};
+    display: ${({ isOpen }) => (!isOpen ? "flex" : "none")};
   }
 
   #close-menu {
-    visibility: ${({ isopen }) => (isopen ? "visibility" : "hidden")};
-    display: ${({ isopen }) => (isopen ? "flex" : "none")};
-    margin-top: -26px;
+    visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+    display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
     z-index: 999;
   }
 
   right: 1.5rem;
 `;
 
-const MenuItems = styled.ul`
-  margin-top: 7rem;
+const MenuItems = styled.ul<{ isOpen: boolean | undefined }>`
+  margin-top: 6rem;
   list-style: none;
-  position: relative;
+  position: absolute;
+  width: 90%;
+  background-color: white;
   height: 20rem;
+  left: 0;
+  right: 0;
+  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
+  display: ${({ isOpen }) => (isOpen ? "block" : "none")};
 
   li {
     display: flex;

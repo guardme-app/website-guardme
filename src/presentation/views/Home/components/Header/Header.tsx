@@ -37,6 +37,7 @@ export const Header: React.FC = () => {
             sx={{ display: { xs: "none", md: "flex" } }}
             display="flex"
             alignItems="center"
+            justifyContent="space-between"
           >
             <HeaderStyles.ContainerNav>
               {menu.map(({ name, link }, index) => {
@@ -52,7 +53,7 @@ export const Header: React.FC = () => {
         </Grid>
 
         <HeaderStyles.MenuIcon
-          isopen={isOpen ? true : undefined}
+          isOpen={isOpen}
           item
           sx={{ display: { md: "none", xs: "flex" } }}
           xs={1.5}
@@ -60,6 +61,7 @@ export const Header: React.FC = () => {
         >
           <Image
             src={MenuHamburguer}
+            id="menu-hamburguer"
             alt="menu hamburguer"
             width={37}
             height={37}
@@ -68,6 +70,7 @@ export const Header: React.FC = () => {
           />
           <Image
             src={CloseMenu}
+            id="close-menu"
             alt="Close menu"
             width={37}
             height={37}
@@ -76,7 +79,8 @@ export const Header: React.FC = () => {
               setIsOpen(false);
             }}
           />
-          <HeaderStyles.MenuItems>
+
+          <HeaderStyles.MenuItems isOpen={isOpen}>
             {menu.map(({ name, link }) => {
               return (
                 <HeaderStyles.MenuItem key={name}>{name}</HeaderStyles.MenuItem>
