@@ -49,7 +49,7 @@ const Content = styled.h3`
   font-family: "Open Sans", sans-serif;
   width: 100%;
   font-size: 40px;
-  white-space: nowrap;
+  flex-wrap: wrap;
   margin-top: 80px;
   font-weight: 300;
   color: black;

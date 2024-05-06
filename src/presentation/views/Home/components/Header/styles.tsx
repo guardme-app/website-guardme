@@ -54,70 +54,8 @@ const ContainerNav = styled.div`
   }
 `;
 
-const MenuIcon = styled(Grid)<{ isopen: boolean | undefined }>`
-  svg {
-    width: 32px;
-    min-width: 32px;
-    height: 32px;
-    min-height: 32px;
-    cursor: pointer;
-  }
-
-  #menu-hamburguer {
-    visibility: ${({ isopen }) => (!isopen ? "visibility" : "hidden")};
-    display: ${({ isopen }) => (isopen ? "none" : "flex")};
-  }
-
-  #close-menu {
-    visibility: ${({ isopen }) => (isopen ? "visibility" : "hidden")};
-    display: ${({ isopen }) => (isopen ? "flex" : "none")};
-    margin-top: -26px;
-    z-index: 999;
-  }
-
-  right: 1.5rem;
-`;
-
-const MenuItems = styled.ul`
-  margin-top: 7rem;
-  list-style: none;
-  position: relative;
-  height: 20rem;
-
-  li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 1rem 0rem;
-    color: #202020;
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-bottom: 1px solid #7b61ff;
-  }
-`;
-
-const MenuItem = styled.li<IHeaderItemProps>`
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #202020;
-  transition: 0.2s all ease;
-  padding: 0.25rem 0.5rem;
-  position: relative;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  opacity: ${({ isDisabled }) => (isDisabled ? "0.5" : "1")};
-`;
-
 export const HeaderStyles = {
   Header,
   Nav,
   ContainerNav,
-  MenuIcon,
-  MenuItems,
-  MenuItem,
 };

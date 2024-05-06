@@ -16,6 +16,10 @@ const BoxBg = styled.div`
   height: 348px;
   z-index: 1;
   position: absolute;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 const ContainerLeft = styled.div`
@@ -118,6 +122,9 @@ const TextContainer = styled.h2`
   text-align: start;
   flex-wrap: wrap;
   margin-top: 43%;
+  @media (max-width: 900px) {
+    margin-top: -23%;
+  }
 
   > p {
     font-size: 18px;
@@ -127,6 +134,10 @@ const TextContainer = styled.h2`
     margin-top: 5px;
     line-height: 33px;
     font-family: "Open Sans", sans-serif;
+    @media (max-width: 900px) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 `;
 

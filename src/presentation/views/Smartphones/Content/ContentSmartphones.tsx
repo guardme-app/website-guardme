@@ -27,8 +27,10 @@ export const Smartphones: React.FC = () => {
           />
         </SmartphonesStyles.ContainerImg>
         <SmartphonesStyles.Content>
-          Aqui ainda vou colocar um exemplo, porque ainda não pensei em nada
-          dwnadnwndwdakdnwkdadwkkkkkkkkkkkkkkkkkkkkk
+          Stay connected with GuardMe’s smartphone insurance. Covering
+          everything from screen breaks and water damage to theft, our fast,
+          easy claims process ensures that your device is protected, with
+          minimal downtime and maximum peace of mind{" "}
         </SmartphonesStyles.Content>
       </Container>
     </SmartphonesStyles.Container>
