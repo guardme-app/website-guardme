@@ -3,6 +3,7 @@ import gustavo from "@/presentation/assets/about-screen/Gustavo.png";
 import joao from "@/presentation/assets/about-screen/Joao.png";
 import jamal from "@/presentation/assets/about-screen/Jamal.jpeg";
 import meiraitt from "@/presentation/assets/about-screen/Meiraitt.png";
+//
 
 export const cards = [
   {
