@@ -1,6 +1,6 @@
 import bail from "@/presentation/assets/section-4/bail.png";
 import bitcoin from "@/presentation/assets/section-4/bitcoin.png";
-import document from "@/presentation/assets/section-4/Document.png";
+import document from "@/presentation/assets/section-4/document.png";
 
 export const cards = [
   {
