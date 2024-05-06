@@ -11,11 +11,7 @@ export const About: React.FC = () => {
     <AboutStyles.Container>
       <Container $flexDirection="column">
         <AboutStyles.Title>
-          <h1>Meet the Clonify team</h1>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered in some form, by injected humour
-          </p>
+          <h1>Meet the team</h1>
         </AboutStyles.Title>
 
         <Grid container flexDirection="row" justifyContent="center">

@@ -27,7 +27,11 @@ export const Houses: React.FC = () => {
           />
         </HousesStyles.ContainerImg>
         <HousesStyles.Content>
-          Aqui ainda vou colocar um exemplo, porque ainda não pensei em nada
+          Secure your sanctuary with GuardMe home insurance. From structural
+          damage to losses due to natural disasters, our policies offer
+          extensive protection. Tailor your coverage to include additional risks
+          like fire and burglary, ensuring that your home and belongings are
+          well protected against unforeseen events
         </HousesStyles.Content>
       </Container>
     </HousesStyles.Container>

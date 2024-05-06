@@ -1,43 +1,43 @@
-import img5 from "@/presentation/assets/about-screen/5.png";
-import img4 from "@/presentation/assets/about-screen/4.png";
-import img3 from "@/presentation/assets/about-screen/3.png";
-import img2 from "@/presentation/assets/about-screen/2.png";
-import img1 from "@/presentation/assets/about-screen/1.png";
+import daniel from "@/presentation/assets/about-screen/Daniel.png";
+import gustavo from "@/presentation/assets/about-screen/Gustavo.png";
+import joao from "@/presentation/assets/about-screen/Joao.png";
+import jamal from "@/presentation/assets/about-screen/Jamal.jpeg";
+import meiraitt from "@/presentation/assets/about-screen/Meiraitt.png";
 
 export const cards = [
   {
     id: 0,
-    image: img1,
-    name: "Jocelyn Schleifer",
-    profession: "Software Engineer",
-    text: "There are many variations of passages of Lorem Ipsum available",
+    image: gustavo,
+    name: "Gustavo Oliveira",
+    profession: "Marketing",
+    text: "My background in marketing further complements my design expertise, allowing me to create impactful and user-centric solutions.",
   },
   {
     id: 1,
-    image: img2,
-    name: "Martin Donin",
-    profession: "Software Engineer",
-    text: "There are many variations of passages of Lorem Ipsum available",
+    image: daniel,
+    name: "Daniel Lime",
+    profession: "Passionate Designer",
+    text: "I'm a passionate designer with extensive experience in UX/UI design and proficiency in various design software.",
   },
   {
     id: 2,
-    image: img3,
-    name: "Jordyn Septimus",
-    profession: "Software Engineer",
-    text: "There are many variations of passages of Lorem Ipsum available",
+    image: joao,
+    name: "João Santos",
+    profession: "Blockchain Developer",
+    text: "With over 4 years of experience in blockchain technology, I've developed a deep understanding of its intricacies.",
   },
   {
     id: 3,
-    image: img4,
-    name: "Lindsey Dokidis",
-    profession: "Software Engineer",
-    text: "There are many variations of passages of Lorem Ipsum available",
+    image: jamal,
+    name: "João Ferreira",
+    profession: "Frontend Developer",
+    text: "As a frontend developer with over 3 years of experience, I'm skilled in multiple programming languages.",
   },
   {
     id: 4,
-    image: img5,
-    name: "Hanna Dias",
-    profession: "Software Engineer",
-    text: "There are many variations of passages of Lorem Ipsum available",
+    image: meiraitt,
+    name: "Luiz Meiratt",
+    profession: "Product Owner",
+    text: "I'm a Product Owner with over 2 years of experience. I specialize in turning ideas into tangible, impactful products, leading teams to create high-quality solutions that meet customer needs. I'm committed to innovation and adding value to our products and business.",
   },
 ];

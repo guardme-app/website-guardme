@@ -27,7 +27,11 @@ export const Vehicles: React.FC = () => {
           />
         </VehiclesStyles.ContainerImg>
         <VehiclesStyles.Content>
-          Aqui ainda vou colocar um exemplo, porque ainda não pensei em nada
+          Our vehicle insurance provides comprehensive coverage against
+          accidents, theft, and damage. Whether you drive a car or ride a
+          motorcycle, our policies ensure you are protected on the road with
+          quick claims processing and adaptable coverage options to meet all
+          your needs
         </VehiclesStyles.Content>
       </Container>
     </VehiclesStyles.Container>
